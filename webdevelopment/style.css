@@ -1,5 +1,3 @@
-a {
-    background-color: gold
-    border: 5px solid purple
-    padding: 10px
-}
+main a {background-color: gold}
+main a {border: 5px solid purple}
+main a {padding: 10px}
