@@ -1,14 +1,55 @@
+* {
+    margin: 0
+    padding: 0
+}
+
 #nav_menu ul {
     list-style-type: none;              /*Remove bullets from all ul elements*/
-    border-bottom: 3px solid black;
+    position: relative;                 /* submenus can be positioned*/
     margin: 10px;
-    padding: 15px;
+   
+    font-family: lato;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+}
+
+#nav_menu ul li {
+    float: left;                        /* display items horizontally */
+    padding: 24px;
+}
+    
+#nav_menu ul ul {
+    display: none;                      /* don't display submenu until hover over li */
+    position: absolute;
+    top: 100%;                          /* postiion submenu at bottom of main menu */
+}
+
+#nav_menu ul ul li {
+    float: none;                        /* display submenu vertically */
     
 }
-ul li{
-    margin: 0px;
-    padding: 10px;
-    display: inline;                    /* */
-    border: none;
-    background: none;
+
+#nav_menu ul li:hover > ul {                /* ul child of li element */
+    display: block;                        /* display submenu on hover of li element */
+    background-color: f3f3f3;
 }
+
+#nav_menu > ul::after{                
+    content: "";                        /* add empty content to end of the first ul */
+    display: block;                     /* display content as block content */
+    clear: both;                      /* stop floating of li elements */
+    padding: 20px;
+}
+
+#nav_menu ul li ul li{
+    padding: 8px 14px;
+}
+
+
+/*
+    This was difficult for me to understand. 
+    I'm going to spend a lot more time working on this. 
+    I understand it was not completed 100%, but decided I needed a step away and wanted to provide what I've done so far considering it's already late. 
+*/
