@@ -1,3 +1,34 @@
-main a {background-color: gold}
-main a {border: 5px solid purple}
-main a {padding: 10px}
+#resume {                   /* Resume Link design - button style */
+    background-color: #E9E9E9;
+    border: 5px solid #4C3F67;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#resume:hover {                /* hover element for resume button */
+    background-color: #E7CC12;
+}
+
+#first {
+    color:#4C3F67;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p.a {
+    text-indent: 50px;
+}
+
+body {
+    display: block;
+    font-family: lato, verdana, tahoma, sans-serif;
+}
+
+main {
+    margin: 1em;
+}
+
+footer {
+    margin-top: 3em;
+}

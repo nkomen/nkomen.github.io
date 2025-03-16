@@ -16,7 +16,7 @@ School/Term: Universty of Missouri, Spring 2025
 
 Developed: February 14, 2025
 
-Tested: February 14, 2025, passed HTML Validator
+Tested: March 15, 2025, passed HTML Validator
 
 ****************************
 
@@ -26,8 +26,26 @@ Tested: February 14, 2025, passed HTML Validator
 
                <link rel="stylesheet"
                href="style.css">
+
+               <link rel="stylesheet"
+               href="nav.css">
 </head>
 <body>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#project.html">Projects</a>
+                <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Personal Reflection</a></li>
+            <li><a href="#contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>About Me</h1>
     </header>
@@ -44,7 +62,7 @@ Tested: February 14, 2025, passed HTML Validator
             I can accept failure, everyone fails at something. But I can't accept not trying. - Michael Jordan,
         </blockquote>
         <br>
-        <a href="../ISLT 7355/Komenresume.pdf">Resume</a>
+        <a id=resume href="../ISLT 7355/Komenresume.pdf"><b>Resume</b></a>
     </main>
     <br>
     <footer>

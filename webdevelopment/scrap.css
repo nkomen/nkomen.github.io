@@ -1,0 +1,43 @@
+
+#nav_menu ul {
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+    font-family: lato, verdana, tahoma, sans-serif;
+}
+
+
+    
+#nav_menu ul ul {
+    display: none;                      /* don't display submenu until hover over li */
+    position: absolute;
+    top: 100%;                          /* postiion submenu at bottom of main menu */
+}
+
+#nav_menu ul ul li {
+    float: none;                        /* display submenu vertically */
+    
+}
+
+#nav_menu ul li:hover > ul {                /* ul child of li element */
+    display: block;                        /* display submenu on hover of li element */
+    background-color: grey;
+}
+
+#nav_menu > ul::after{                
+    content: "";                        /* add empty content to end of the first ul */
+    display: block;                     /* display content as block content */
+    clear: both;                      /* stop floating of li elements */
+    padding: 20px;
+}
+
+#nav_menu ul li ul li{
+    padding: 8px 14px;
+}
+
+*/
+/*
+    This was difficult for me to understand. 
+    I'm going to spend a lot more time working on this. 
+    I understand it was not completed 100%, but decided I needed a step away and wanted to provide what I've done so far considering it's already late. 
+*/
