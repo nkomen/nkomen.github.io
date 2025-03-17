@@ -1,3 +1,63 @@
+#nav_menu {
+    color: black;
+    text-decoration: none;
+    
+    font-family: lato, verdana, tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #E9E9E9;
+    font-size: 24px;
+    position: relative;                 /* submenus can be positioned*/
+}
+
+#nav_menu ul li {
+    text-align: center;
+    float: left;                        /* display items horizontally */
+    padding: 24px;
+}
+#nav_menu ul ul {
+    /*display: none;                      /* don't display submenu until hover over li */
+    position: absolute;
+    top: 100%;                          /* postiion submenu at bottom of main menu */
+}
+
+#nav_menu ul ul {
+    display: none;                      /* don't display submenu until hover over li */
+    position: absolute;
+    top: 100%;                          /* postiion submenu at bottom of main menu */
+}
+
+#nav_menu ul ul li {
+    float: none;                        /* display submenu vertically */
+}
+
+#nav_menu ul li:hover > ul {                /* ul child of li element */
+    display: block;                        /* display submenu on hover of li element */
+        
+}
+
+#nav_menu > ul::after {                
+    content: "";                        /* add empty content to end of the first ul */
+    display: block;                     /* display content as block content */
+    clear: both;                      /* stop floating of li elements */
+    padding: 2px;
+}
+
+#nav_menu ul li ul li {
+    padding: 5px 14px;
+}
+
+
+
+~~~~~~~
+
 
 #nav_menu ul {
     color: black;
@@ -7,21 +67,17 @@
 }
 
 
-    
-#nav_menu ul ul {
-    display: none;                      /* don't display submenu until hover over li */
-    position: absolute;
-    top: 100%;                          /* postiion submenu at bottom of main menu */
-}
-
-#nav_menu ul ul li {
-    float: none;                        /* display submenu vertically */
-    
-}
 
 #nav_menu ul li:hover > ul {                /* ul child of li element */
     display: block;                        /* display submenu on hover of li element */
     background-color: grey;
+}
+
+#nav_menu > ul::after {                
+    content: "";                        /* add empty content to end of the first ul */
+    display: block;                     /* display content as block content */
+    clear: both;                      /* stop floating of li elements */
+    padding: 2px;
 }
 
 #nav_menu > ul::after{                

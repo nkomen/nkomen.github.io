@@ -5,7 +5,6 @@
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 100%;
     width: 80%;
     margin: auto;
@@ -17,19 +16,21 @@
 }
 
 #nav_menu ul ul {
-    display: none;                      /* don't display submenu until hover over li */
-    position: absolute;
-    top: 100%;                          /* postiion submenu at bottom of main menu */
+    display: flex; 
+              
+    
 }
 
-#nav_menu ul ul li {
-    float: none;                        /* display submenu vertically */
+#nav_menu ul ul {
+  display: none;                      /* don't display submenu until hover over li */
+  top: 100%;                          /* postiion submenu at bottom of main menu */
 }
 
 #nav_menu ul li {
     list-style-type: none;
     padding: 10px;
     margin: 0 10px;
+    
   }
 
   #nav_menu ul li:hover > ul {                /* ul child of li element */
