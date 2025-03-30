@@ -1,99 +1,51 @@
-#nav_menu {
-    color: black;
-    text-decoration: none;
-    
-    font-family: lato, verdana, tahoma, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.reflection {                             /*reflection page START*/
+    width: 960px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto auto auto;
+    gap: 50px / 50px;
 }
 
-#nav_menu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.p1 {                                   /*reflection page*/
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #E7CC12;
+}
+
+.p2 {                                   /*reflection page*/
+    grid-column: 2;
+    grid-row: 3;
     background-color: #E9E9E9;
-    font-size: 24px;
-    position: relative;                 /* submenus can be positioned*/
 }
 
-#nav_menu ul li {
-    text-align: center;
-    float: left;                        /* display items horizontally */
-    padding: 24px;
-}
-#nav_menu ul ul {
-    /*display: none;                      /* don't display submenu until hover over li */
-    position: absolute;
-    top: 100%;                          /* postiion submenu at bottom of main menu */
+.p3 {                                    /*reflection page*/
+    grid-column: 3;
+    grid-row: 3;
+    background-color: #E7CC12;
 }
 
-#nav_menu ul ul {
-    display: none;                      /* don't display submenu until hover over li */
-    position: absolute;
-    top: 100%;                          /* postiion submenu at bottom of main menu */
+.p4 {                                    /*reflection page*/
+    grid-column: 1;
+    grid-row: 4;
+    background-color: #E9E9E9;
 }
 
-#nav_menu ul ul li {
-    float: none;                        /* display submenu vertically */
+.p5 {                                    /*reflection page*/
+    grid-column: 2;
+    grid-row: 4;
+    background-color: #E7CC12;
 }
 
-#nav_menu ul li:hover > ul {                /* ul child of li element */
-    display: block;                        /* display submenu on hover of li element */
-        
+.p6 {                                    /*reflection page*/
+    grid-column: 3;
+    grid-row: 4;
+    background-color: #E9E9E9;
 }
-
-#nav_menu > ul::after {                
-    content: "";                        /* add empty content to end of the first ul */
-    display: block;                     /* display content as block content */
-    clear: both;                      /* stop floating of li elements */
-    padding: 2px;
-}
-
-#nav_menu ul li ul li {
-    padding: 5px 14px;
-}
-
-
-
-~~~~~~~
-
-
-#nav_menu ul {
-    color: black;
-    text-decoration: none;
-    text-decoration: none;
-    font-family: lato, verdana, tahoma, sans-serif;
-}
-
-
-
-#nav_menu ul li:hover > ul {                /* ul child of li element */
-    display: block;                        /* display submenu on hover of li element */
-    background-color: grey;
-}
-
-#nav_menu > ul::after {                
-    content: "";                        /* add empty content to end of the first ul */
-    display: block;                     /* display content as block content */
-    clear: both;                      /* stop floating of li elements */
-    padding: 2px;
-}
-
-#nav_menu > ul::after{                
-    content: "";                        /* add empty content to end of the first ul */
-    display: block;                     /* display content as block content */
-    clear: both;                      /* stop floating of li elements */
-    padding: 20px;
-}
-
-#nav_menu ul li ul li{
-    padding: 8px 14px;
-}
-
-*/
-/*
-    This was difficult for me to understand. 
-    I'm going to spend a lot more time working on this. 
-    I understand it was not completed 100%, but decided I needed a step away and wanted to provide what I've done so far considering it's already late. 
-*/

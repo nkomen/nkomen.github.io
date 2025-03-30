@@ -22,16 +22,20 @@ Tested: March 15, 2025, passed HTML Validator
 
 -->
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               
                <title>About Me</title>
 
                <link rel="stylesheet"
                href="style.css">
-
                <link rel="stylesheet"
                href="nav.css">
 </head>
 <body>
-    <img src="desktop_logo.jpg" alt="Natasha Komen Headshot" width="300" height="50">
+    <!--<img src="desktop_logo.jpg" alt="Natasha Komen Headshot" width="300" height="50">-->
+    <p id="logo">NatashaK Portfolio</p>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -47,11 +51,13 @@ Tested: March 15, 2025, passed HTML Validator
             <li><a href="#contact.html">Contact Me</a></li>
         </ul>
     </nav>
-    <hr>
+    <br>
+    <hr id="hr1">
+    <br>
     <header>
         <h1>A Little About Me</h1>
     </header>
-    <main>
+    <main class="about">
         <img id=video src="video_standin.jpg" alt="Resume Video" width="300" height="400"> 
         <p>
             My passions are writing, creating content, and training dogs. My favorite projects involve forming content into an easy-to-understand resource with useful design elements. One of the more interesting projects I worked on creating Standard Operating Procedure websites. My team did this across various departments within an organization. Information had previously been scattered or isolated by subject matter experts.
@@ -71,7 +77,7 @@ Tested: March 15, 2025, passed HTML Validator
         <br>
 
     </main>
-    <br>
+    <hr>
     <footer>
         <p>Natasha Komen - nkcgk@umsystem.edu
             <br>Copyright 2025 Natasha Komen
