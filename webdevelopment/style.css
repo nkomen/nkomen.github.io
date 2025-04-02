@@ -71,7 +71,7 @@ h3 {                                    /*home page*/
         "headshot"
         "resume";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 500px 60px 60px 1fr;
+    grid-template-rows: repeat(4, auto);
     gap: 5px;
     padding: 0px;
     margin: 0px;
@@ -533,5 +533,53 @@ footer {                                    /*footer*/
 @media screen and  (max-width: 320px) {
     .home {
         width: 320px;
+    }
+}
+
+/* Print Stylesheet*/
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font-family: serif;
+    }
+    #nav_menu,
+    #logo,
+    #hr1,
+    img,
+    #resume,
+    hr {
+        display: none;
+    }
+    header {
+        margin-bottom: 0;
+        border: none;
+        text-align: center;
+    }
+    /*#resume::after {
+        content: " [" attr(href)"]";
+    }*/
+    @page {
+        margin: 1in;
+    }
+    h1 {
+        font-size: 14pt;
+    }
+    p {
+        font-size: 11pt;
+        grid-column: 1 / 5;
+    }
+    blockquote {
+        font-size: 11pt;
+        font-family: lato; /* In the web version, the whole page is lato, just ahve blockquote lato for print*/
+        grid-column: 1 / 5;
+        margin: 0;
+    }
+    footer {
+        page-break-before: avoid !important;
+        padding: 0;
+        margin: 0;
     }
 }
