@@ -1,3 +1,11 @@
+@font-face { 
+
+    font-family: lato; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("font.ttf"); /*remember this is how we link to files in CSS!*/
+    
+    }
+
 header {                            /*All pages*/
     text-align: center;
     Padding: 20px 0;
