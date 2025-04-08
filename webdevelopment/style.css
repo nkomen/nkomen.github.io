@@ -76,6 +76,7 @@ h3 {                                    /*home page*/
     padding: 0px;
     margin: 0px;
 }
+
 #video {                              /*about page*/
     grid-column: 1 / 1;
     grid-row: 1 / 1;
@@ -87,7 +88,7 @@ p {                              /*about page*/
     grid-row: 1;
     width: 80%;
     border: none;
-    padding: 50px;
+    /*padding: 50px;*/
     margin: 20px;
     line-height: 1.8;
 }
