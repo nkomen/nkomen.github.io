@@ -88,7 +88,7 @@ p {                              /*about page*/
     grid-row: 1;
     width: 80%;
     border: none;
-    /*padding: 50px;*/
+    padding: 50px;
     margin: 20px;
     line-height: 1.8;
 }
@@ -144,16 +144,16 @@ blockquote {                              /*about page*/
     grid-template-columns: 1fr 300px;
     grid-template-rows: repeat(12, auto);
 }
-.proj1 {
+.proj1 {                           /*project page*/
     grid-column: 1/3;
     grid-row: 1;
     padding: 0;
 }
-.a {
+.a {                         /*project page*/
     grid-column: 1;
     grid-row: 2;
 }
-.image1 {
+.image1 {                         /*project page*/
     grid-column: 2;
     grid-row: 2;
     padding: 10px;
@@ -162,7 +162,7 @@ blockquote {                              /*about page*/
     grid-column: 1/3;
     grid-row: 3;
 }
-.rp1 {
+.rp1 {                         /*project page*/
     grid-column: 1/3;
     grid-row: 4;
 }
@@ -172,7 +172,7 @@ blockquote {                              /*about page*/
     grid-row: 5;
     padding: 0;
 }
-.b {
+.b {                         /*project page*/
     grid-column: 1;
     grid-row: 6;
 }
@@ -181,7 +181,7 @@ blockquote {                              /*about page*/
     grid-row: 6;
     padding: 10px;
 }
-.image3 {
+.image3 {                         /*project page*/
     grid-column: 2;
     grid-row: 6;
     padding: 10px;
@@ -200,7 +200,7 @@ blockquote {                              /*about page*/
     grid-row: 9;
     padding: 0;
 }
-.c {
+.c {                         /*project page*/
     grid-column: 1;
     grid-row: 10;
 }
@@ -218,7 +218,7 @@ blockquote {                              /*about page*/
     grid-column: 1/3;
     grid-row: 11;
 }
-.rp3 {
+.rp3 {                         /*project page*/
     grid-column: 1/3;
     grid-row: 12;
 }
