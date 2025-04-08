@@ -282,7 +282,22 @@ footer {                                    /*footer*/
 
 }
 
+.pic {                                   /*footer icons*/
+    width: 25px;
+    height: 25px;
+}
 
+.picBig {                                   /*footer icons*/
+    position: absolute;
+    width: 0px;
+    /*-webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s; */
+    z-index: 10;
+}
+
+.pic:hover + .picBig {
+    width: 50x;
+}
 
 @media screen and  (max-width: 768px) {     /*tablet*/
     .home {                                 /*tablet home*/
