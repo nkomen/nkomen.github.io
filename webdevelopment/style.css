@@ -120,7 +120,7 @@ blockquote {                              /*about page*/
 }
 
 .projects {                             /*project page START*/
-    width: 960px;
+    width: 769px;
     margin: 0px auto;
     display: grid;
     grid-template-areas:
@@ -142,7 +142,7 @@ blockquote {                              /*about page*/
         "r3"
         "rp3";
     grid-template-columns: 1fr 300px;
-    grid-template-rows: repeat(12, auto);
+    grid-template-rows: repeat(14, auto);
 }
 .proj1 {                           /*project page*/
     grid-column: 1/3;
@@ -174,7 +174,7 @@ blockquote {                              /*about page*/
 }
 .b {                         /*project page*/
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 6/8;
 }
 .image2 {
     grid-column: 2;
@@ -183,44 +183,44 @@ blockquote {                              /*about page*/
 }
 .image3 {                         /*project page*/
     grid-column: 2;
-    grid-row: 6;
+    grid-row: 7;
     padding: 10px;
 }
 .r2 {
     grid-column: 1/3;
-    grid-row: 7;
+    grid-row: 8;
 }
 .rp2 {
     grid-column: 1/3;
-    grid-row: 8;
+    grid-row: 9;
 }
 
 .proj3 {
     grid-column: 1/3;
-    grid-row: 9;
+    grid-row: 10;
     padding: 0;
 }
 .c {                         /*project page*/
     grid-column: 1;
-    grid-row: 10;
+    grid-row: 11/13;
 }
 .image4 {
     grid-column: 2;
-    grid-row: 10;
+    grid-row: 11;
     padding: 10px;
 }
 .image5 {
     grid-column: 2;
-    grid-row: 10;
+    grid-row: 12;
     padding: 10px;
 }
 .r3 {
     grid-column: 1/3;
-    grid-row: 11;
+    grid-row: 13;
 }
 .rp3 {                         /*project page*/
     grid-column: 1/3;
-    grid-row: 12;
+    grid-row: 14;
 }
 
 .reflection {                             /*reflection page START*/
@@ -301,6 +301,11 @@ footer {                                    /*footer*/
 }
 
 @media screen and  (max-width: 768px) {     /*tablet*/
+    h1 {
+        text-align: center;
+        margin-top: 2em;
+    }
+    
     .home {                                 /*tablet home*/
         width: 641px;
         grid-template-columns: 1fr 1fr;
@@ -355,35 +360,36 @@ footer {                                    /*footer*/
 
     .projects {                                 /*tablet project*/
         width: 641px;
-        grid-template-columns: 1fr;             /*need to fgure out width*/
+        grid-template-columns: repeat(2, auto);             
         grid-template-rows:  repeat(15, auto);
+        text-align: center;
     }
     .proj1 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 1;
     }
     .a {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 2;
     }
     .image1 {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 3;
     }
     .r1 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 4;
     }
     .rp1 {
-        grid-column: 11;
+        grid-column: 1/3;
         grid-row: 5;
     }
     .proj2 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 6;
     }
     .b {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 7;
     }
     .image2 {
@@ -391,27 +397,27 @@ footer {                                    /*footer*/
         grid-row: 8;
     }
     .image3 {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 8;
     }
     .r2 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 9;
     }
     .rp2 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 10;
     }
     .proj3 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 11;
     }
     .c {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 12;
     }
     .image4 {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 13;
     }
     .image5 {
@@ -423,11 +429,11 @@ footer {                                    /*footer*/
         grid-row: 14;
     }
     .rp3 {
-        grid-column: 1;
+        grid-column: 1/3;
         grid-row: 15;
     }
     
-    .reflection {                             /*reflection page START*/
+    .reflection {                             /*tablet reflection */
         width: 960px;
         margin: 0px auto;
         display: grid;
@@ -473,6 +479,11 @@ footer {                                    /*footer*/
     }
 
 @media screen and  (max-width: 640px) {     /*mobile home*/
+    h1 {
+        text-align: center;
+        margin-top: 2em;
+    }
+    
     .home {
         width: 320px;
         grid-template-columns: 1fr;
@@ -518,6 +529,81 @@ footer {                                    /*footer*/
     #resume {
         grid-column: 1;
         grid-row: 5;
+    }
+
+    .projects {                                 /*mobile project*/
+        width: 320px;
+        grid-template-columns: 1fr;             /*need to fgure out width*/
+        grid-template-rows:  repeat(17, auto);
+        text-align: center;
+    }
+    .proj1 {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    .a {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    .image1 {
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+    .r1 {
+        grid-column: 1/2;
+        grid-row: 4;
+    }
+    .rp1 {
+        grid-column: 1/2;
+        grid-row: 5;
+    }
+    .proj2 {
+        grid-column: 1/2;
+        grid-row: 6;
+    }
+    .b {
+        grid-column: 1/2;
+        grid-row: 7;
+    }
+    .image2 {
+        grid-column: 1/2;
+        grid-row: 8;
+    }
+    .image3 {
+        grid-column: 1/2;
+        grid-row: 9;
+    }
+    .r2 {
+        grid-column: 1/2;
+        grid-row: 10;
+    }
+    .rp2 {
+        grid-column: 1/2;
+        grid-row: 11;
+    }
+    .proj3 {
+        grid-column: 1/2;
+        grid-row: 12;
+    }
+    .c {
+        grid-column: 1/2;
+        grid-row: 13;
+    }
+    .image4 {
+        grid-column: 1/2;
+        grid-row: 14;
+    }
+    .image5 {
+        grid-column: 1/2;
+        grid-row: 15;
+    }
+    .r3 {
+        grid-column: 1/2;
+        grid-row: 16;
+    }
+    .rp3 {
+        grid-column: 1/2;
+        grid-row: 17;
     }
     
     .reflection {                                 /*mobile reflection*/
