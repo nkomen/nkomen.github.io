@@ -1,118 +1,75 @@
-.projects {                             /*project page START*/
-    width: 960px;
-    margin: 0px auto;
-    display: grid;
-    grid-template-areas:
-        "proj1"
-        "a"
-        "image1"
-        "r1"
-        "rp1"
-        "proj2"
-        "b"
-        "image2"
-        "image3"
-        "r2"
-        "rp2"
-        "proj3"
-        "c"
-        "image4"
-        "image5"
-        "r3"
-        "rp3";
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: repeat(12, auto);
+
+.projects {                                 /*tablet project*/
+    width: 641px;
+    grid-template-columns: repeat(2, auto);             /*need to fgure out width*/
+    grid-template-rows:  repeat(15, auto);
+    text-align: center;
 }
 .proj1 {
     grid-column: 1/3;
     grid-row: 1;
-    padding: 0;
 }
 .a {
-    grid-column: 1;
+    grid-column: 1/3;
     grid-row: 2;
 }
 .image1 {
-    grid-column: 2;
-    grid-row: 2;
-    padding: 10px;
+    grid-column: 1;
+    grid-row: 3;
 }
 .r1 {
     grid-column: 1/3;
-    grid-row: 3;
+    grid-row: 4;
 }
 .rp1 {
     grid-column: 1/3;
-    grid-row: 4;
+    grid-row: 5;
 }
-
 .proj2 {
     grid-column: 1/3;
-    grid-row: 5;
-    padding: 0;
+    grid-row: 6;
 }
 .b {
-    grid-column: 1;
-    grid-row: 6;
-}
-.image2 {
-    grid-column: 2;
-    grid-row: 6;
-    padding: 10px;
-}
-.image3 {
-    grid-column: 2;
-    grid-row: 6;
-    padding: 10px;
-}
-.r2 {
     grid-column: 1/3;
     grid-row: 7;
 }
-.rp2 {
-    grid-column: 1/3;
+.image2 {
+    grid-column: 1;
     grid-row: 8;
 }
-
-.proj3 {
+.image3 {
+    grid-column: 2;
+    grid-row: 8;
+}
+.r2 {
     grid-column: 1/3;
     grid-row: 9;
-    padding: 0;
 }
-.c {
-    grid-column: 1;
+.rp2 {
+    grid-column: 1/3;
     grid-row: 10;
 }
-.image4 {
-    grid-column: 2;
-    grid-row: 10;
-    padding: 10px;
-}
-.image5 {
-    grid-column: 2;
-    grid-row: 10;
-    padding: 10px;
-}
-.r3 {
+.proj3 {
     grid-column: 1/3;
     grid-row: 11;
 }
-.rp3 {
+.c {
     grid-column: 1/3;
     grid-row: 12;
 }
-
-.reflection {                             /*reflection page START*/
-    width: 960px;
-    margin: 0px auto;
-    display: grid;
-    grid-template-areas:
-        "p1"
-        "p2"
-        "p3"
-        "p4"
-        "p5"
-        "p6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
+.image4 {
+    grid-column: 1;
+    grid-row: 13;
+}
+.image5 {
+    grid-column: 2;
+    grid-row: 13;
+}
+.r3 {
+    grid-column: 1/3;
+    grid-row: 14;
+}
+.rp3 {
+    grid-column: 1/3;
+    grid-row: 15;
 }

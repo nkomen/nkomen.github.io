@@ -64,12 +64,6 @@ body {
     background-color: #E7CC12;
 }
 
-
-
-caption {
-    color: ;
-}
-
 table {                                   /*home page*/
     grid-column: 1/4;
     grid-row: 6;
@@ -307,6 +301,29 @@ blockquote {                              /*about page*/
     grid-column: 3;
     grid-row: 4;
     background-color: #E9E9E9;
+}
+
+#form {                                /*contact page*/
+    display: block;
+    font-family: lato, verdana, tahoma, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+button {                              /* Submit button */
+    background-color: #E9E9E9;
+    border: 5px solid #4C3F67;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+
+}
+
+button:hover {                /* hover element for submt button */
+    background-color: #E7CC12;
 }
 
 footer {                                    /*footer*/
