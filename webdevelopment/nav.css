@@ -73,7 +73,7 @@
   width: 900px;
 }
 
-label {                             /* desktop style for hamburger */
+#navlabel label {                             /* desktop style for hamburger */
   margin: 0 40px 0 0;
   font-size: 50px;
   line-height: 70px;
