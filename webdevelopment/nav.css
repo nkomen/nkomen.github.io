@@ -57,7 +57,7 @@
 }
 
 #nav_menu ul li ul li {
-  width: 180px;
+  width: 200px;
   border-radius: 4px;
 }
 
@@ -69,11 +69,11 @@
   background-color: #E7CC12;
 }
 
-#hr1 {                            /* adjust line under menu */
-  width: 900px;
+#navline {                            /* adjust line under menu */
+  width: 1500px;
 }
 
-#navlabel label {                             /* desktop style for hamburger */
+#navlabel {                             /* desktop style for hamburger */
   margin: 0 40px 0 0;
   font-size: 50px;
   line-height: 70px;
@@ -87,11 +87,11 @@
 }
 
 @media only screen and  (max-width: 768px) {
-  #hr1 {
+  #navline {
     display: none;
   }
 
-  label {
+  #navlabel {
     display: block;
     cursor: pointer;
   }

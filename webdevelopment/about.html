@@ -16,7 +16,7 @@ School/Term: Universty of Missouri, Spring 2025
 
 Developed: February 14, 2025
 
-Tested: April 9, 2025, passed HTML Validator
+Tested: April 30, 2025, passed HTML Validator
 
 ****************************
 
@@ -37,7 +37,7 @@ Tested: April 9, 2025, passed HTML Validator
 <body>
     <!--<img src="desktop_logo.jpg" alt="Natasha Komen Headshot" width="300" height="50">-->
     <p id="logo">NatashaK Portfolio</p>
-    <label for="toggle">&#9776;</label>
+    <label id="navlabel" for="toggle">&#9776;</label>
     <input type="checkbox" id="toggle">
     <nav id="nav_menu">
         <ul>
@@ -55,15 +55,17 @@ Tested: April 9, 2025, passed HTML Validator
         </ul>
     </nav>
     <br>
-    <hr id="hr1">
+    <hr id="navline">
     <br>
     <header>
         <h1>A Little About Me - Natasha Komen</h1>
     </header>
     <main class="about">
-        <video width="400" controls>
-            <source id=video src="../ISLT 7355/video/resume_video.mp4" type="video/mp4">
-        </video>
+        <div  id=video>
+            <video width="400" controls>
+                <source src="../ISLT7355/video/resume_video.mp4" type="video/mp4">
+            </video>
+         </div>
         <!--img id=video src="video_standin.jpg" alt="Resume Video" width="300" height="400"--> 
         <p>
             My passions are writing, creating content, and training dogs. My favorite projects involve forming content into an easy-to-understand resource with useful design elements. One of the more interesting projects I worked on creating Standard Operating Procedure websites. My team did this across various departments within an organization. Information had previously been scattered or isolated by subject matter experts.
@@ -78,9 +80,13 @@ Tested: April 9, 2025, passed HTML Validator
         <blockquote>
             I can accept failure, everyone fails at something. But I can't accept not trying. - Michael Jordan,
         </blockquote>
-        <img id=headshot src="headshot_komen.jpg" alt="Natasha Komen Headshot" width="300" height="400"> 
-        <a id=resume href="../ISLT 7355/Komenresume.pdf"><b>Resume</b></a>
-        <br>
+        <div id=headshot>
+            <img src="headshot_komen.jpg" alt="Natasha Komen Headshot" width="300" height="400"> 
+        </div>
+        <div id=resume>
+            <a href="../ISLT7355/Komenresume.pdf"><b>Click to View my Resume</b></a>
+        </div>
+            <br>
 
     </main>
     <hr>
@@ -88,9 +94,9 @@ Tested: April 9, 2025, passed HTML Validator
         <p>
             Natasha Komen 
             <br>
-            <img class="pic" src="../ISLT 7355/images/icons8-email.png" alt="icons8-email"><img class="picbig" src="../ISLT 7355/images/icons8-email.png" alt="icons8-email">nkcgk@umsystem.edu
+            <img class="pic" src="../ISLT7355/images/icons8-email.png" alt="icons8-email"><img class="picbig" src="../ISLT7355/images/icons8-email.png" alt="icons8-email">nkcgk@umsystem.edu
             <br>
-            <img class="pic" src="../ISLT 7355/images/icons8-phone.png" alt="icons8-phone"><img class="picbig" src="../ISLT 7355/images/icons8-phone.png" alt="icons8-phone">1+888-888-8888
+            <img class="pic" src="../ISLT7355/images/icons8-phone.png" alt="icons8-phone"><img class="picbig" src="../ISLT7355/images/icons8-phone.png" alt="icons8-phone">1+888-888-8888
             <br>
             Copyright 2025 Natasha Komen
         </p>
